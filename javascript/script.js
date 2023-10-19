@@ -13,7 +13,6 @@ highscore.textContent = h_score;
 
 function start() {
     randomNumber = Math.floor(Math.random() * 21)+10;
-    console.log(randomNumber);
 }
 btn1.addEventListener('click',()=>{
     start();
