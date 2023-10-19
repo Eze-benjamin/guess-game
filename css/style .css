@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Pacifico&family=Pixelify+Sans:wght@700&family=Roboto+Slab:wght@900&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: oswald;
+    font-weight: 700;
+}
+body{
+    background-color: purple;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    animation: change-background 10s infinite;
+}
+@keyframes change-background {
+    0%{
+        background-color: purple;
+    }
+    25%{
+        background-color: purple;
+    }
+    50%{
+        background-color: darkorange;
+    }
+}
+.box{
+    background-color: darkorange;
+    width: 70%;
+    height: 90vh;
+    position: absolute;
+    top: 2px;
+    border: 2px dotted rgb(166, 109, 38);
+    padding: 10px;
+    /* animation: change-box 15s infinite; */
+}
+@keyframes change-box {
+    0% {
+        background-color: darkorange;
+    }
+
+    25% {
+        background-color: darkorange;
+    }
+
+    50% {
+        background-color: purple;
+    }
+}
+
+/* top */
+.btn1{
+    color: rgb(166, 109, 38);
+    background-color: purple;
+    border: 2px solid rgb(166, 109, 38);
+    box-shadow: -4px -4px 4px darkorange;
+    height: 30px;
+    width: 70px;
+    animation: change-background 10s infinite;
+}
+.numbers{
+    color: rgb(166, 109, 38);
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0; 
+}
+h1{
+    font-family: pixelify sans;
+    font-size: 700;
+    color: rgb(166, 109, 38);
+    text-shadow: 1px 1px 2px darkorange;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    
+}
+.in-number{
+    background-color: purple;
+    color: rgb(166, 109, 38);
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    outline: none;
+    border: transparent;
+    box-shadow: 2px 2px 2px rgb(166, 109, 38);
+    position: relative;
+    top: -20px;
+    left: 44%;
+    animation: change-background 10s infinite;
+}
+.container{
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.ball{
+    width: 25%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    left: 37%;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid rgb(166, 109, 38);
+    animation: rollBall 6s 2s infinite;
+    
+}
+.medium-ball{
+    width: 70%;
+    height: 70%;
+    display: grid;
+    place-items: center;
+    border-radius: 100%;
+    border-bottom: 2px solid purple;
+    border-top: 2px solid rgb(166, 109, 38);
+    animation: rollBall 6s 4s infinite;
+}
+.small-ball{
+    width: 70%;
+    height: 70%;
+    border-radius: 100%;
+    border-top: 2px solid purple;
+    border-bottom: 2px solid rgb(166, 109, 38);
+    animation: rollBall  6s 6s infinite;
+}
+@keyframes rollBall {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(180deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+.sec1{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.sec1 input{
+    background-color: purple;
+    border: 2px solid darkorange;
+    outline: none;
+    text-align: center;
+    color: rgb(166, 109, 38);
+    width: 110px;
+    height: 40px;
+    margin-bottom: 20px;
+    animation: change-background 10s infinite;
+}
+.sec1 button{
+    background-color: purple;
+    border: 2px solid rgb(166, 109, 38);
+    color: rgb(166, 109, 38);
+    box-shadow: -4px -4px -4px rgb(215, 138, 43);
+    width: 110px;
+    height: 40px;
+    animation: change-background 10s infinite;
+}
+.sec2{
+    height: 100%;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+}
+.sec2 p{
+    color: purple;
+    margin: 20px 0;
+    
+}
+.hr{
+    height: 2px;
+    border: 1px dashed rgb(166, 109, 38);
+    
+}
+span{
+    color: rgb(166, 109, 38);
+    text-shadow: 1px 1px 2px rgb(166, 109, 38);
+}
+/* footer */
+.base{
+    height: 9vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: darkorange;
+    border: 2px dotted rgb(166, 109, 38);
+    display: grid;
+    place-items: center;
+    text-shadow: 1px 1px 2px rgb(166, 109, 38);
+    
+}
+b{
+    color: rgb(166, 109, 38);
+    animation: base 10s infinite;
+}
+@keyframes base {
+    0% {
+        color: darkorange;
+    }
+
+    25% {
+        color: darkorange;
+    }
+
+    50% {
+        color: purple;
+    }
+}
